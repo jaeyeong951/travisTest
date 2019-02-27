@@ -1,7 +1,8 @@
 language: java
 
-before_install:
-- chmod +x gradlew
 
 jdk:
  - oraclejdk8
+
+script:
+ - chmod +x ./gradlew assemble check
